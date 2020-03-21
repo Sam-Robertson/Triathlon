@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Six+Caps&display=swap" rel="stylesheet">
     <link href="main.css" rel="stylesheet" type="text/css">
+    <script src="tabs.js"></script>
 </head>
 
 <body>
@@ -14,12 +15,15 @@
         <div id="main">
             <div id="popOut">
                 <div id="topBar">
+                    <div class="tab">
+                        <button class="tablinks"  onclick="openTab(event, 'batterySelector')"> Battery Selector</button>
+                        <button class="tablinks"  onclick="openTab(event, 'chargerSelector')"> Charger Selector</button>
+                    </div>
                     <a href="https://www.triathlon-batteries.com/">
                         <img id="triathlonImage" alt="logo" src="https://www.triathlon-batteries.com/fileadmin/bsdist/theme/img/logo_batteries.png">
                     </a>
-                    <div id="Title"> Battery Selector</div>
                 </div>
-                <div id="selectorContainer"> 
+                 <div id="batterySelector" class="tabcontent"> 
                     <div id="leftSide"> 
                         <div class="selectorOption">
                             <div class="selectorTitle">Manufacturer</div>
@@ -117,6 +121,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div id="chargerSelector" class="tabcontent">
+                        <div> Drugs aren't cool unless a cool kid does them</div>
                 </div>
             </div>
         </div>
